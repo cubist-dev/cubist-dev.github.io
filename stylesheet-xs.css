@@ -1,53 +1,80 @@
-html {
-	font-family: 'Nunito Sans', sans-serif;
-}
+@font-face {
+	font-family: 'basis-grotesque-medium-pro';
+	src: url('fonts/basis-grotesque-medium-pro.eot');
+	src: url('fonts/basis-grotesque-medium-pro.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/basis-grotesque-medium-pro.woff2') format('woff2'),
+		 url('fonts/basis-grotesque-medium-pro.woff') format('woff'),
+		 url('fonts/basis-grotesque-medium-pro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}	
 
 body {
-	background-color:black; 
-	color:white; 
+	background-color:#F7F5F0; 
 	text-align:center; 
+	font-family: 'basis-grotesque-medium-pro', fallback, sans-serif;
 }
 
-h1 {
+img {
 	margin-top:15%; 
-	font-size:6em; 
-	font-weight:bold;
 	margin-bottom:0px;
+	width:80%;
+	height:auto;
+	max-width:400px;
 }
 
 h2 {
-	font-size:1.75em; 
+	font-size:1.5em; 
 	margin-top:0px;
 	margin-bottom:0px;
 	line-height:1;
+	font-weight:normal;
+	color:#000C49;
 }
 
 p {
 	font-size:1.25em;
+	color:#000C49;
 }
 
 button {
-	background-color:white;
+	background-color:#E9B878;
 	border:none;
 	box-shadow: none;
 	font-size: 1.25em;
-	font-weight:bold;
+	color:#000C49;
 	margin-top: 2.75em;
-	border-radius: 6px;
-	padding:1em;
+	border-radius: 50px;
+	padding-left:2em;
+	padding-right:2em;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
 }
 
 a {
-	color:black;
+	color:#000C49;
 	background-color:none;
 	text-decoration:none;
 }
 
 button:hover, a:hover, button:active, a:active {
-	background-color:#f0eff4;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	cursor:pointer;
 }
 
-a {
+a:hover, a:active {
 	-webkit-tap-highlight-color: transparent;
 }
+
+/*
+ * Web Fonts from colophon-foundry.org
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Colophon Foundry. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2022 Colophon Foundry
+ *
+ * Licensed to Cubist, Inc., a Delaware corporation
+ */
